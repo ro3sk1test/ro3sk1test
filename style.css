@@ -233,6 +233,7 @@ body, html {
 
   /* Style for the modal content */
   .modal-content {
+    border: 1px solid green;
       background-color: #ffffff;
       padding: 20px;
       border-radius: 5px;
