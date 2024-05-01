@@ -16,11 +16,21 @@
             display: inline-block;
             margin: 20px; /* Adjust the margin value as needed */
         }
-        figcaption {
+
+        .figloc {
             margin-top: 10px;
         }
-        figcaption:before {
+        .figloc:before {
             content:" 📍 ";
+        }
+        .figloc:after {
+            content: " 🇵🇹";
+        }
+        .fignote {
+            margin-top: 5px;
+        }
+        .fignote:before {
+            content: "🌐 ";
         }
         #container {
             max-width: 100%; /* Allow the container to expand to the maximum width available */
@@ -44,15 +54,28 @@
             <br>
             <figure>
                 <img src="fav/1.JPG" alt="" />
-                <figcaption>Parque Desportivo do Fujanco, Cantanhede, Coimbra</figcaption>
+                <div class="figloc">Parque Desportivo do Fujanco, Cantanhede, Coimbra</div>
             </figure>
             <figure>
                 <img src="fav/2.JPG" alt="" />
-                <figcaption>Coimbra</figcaption>
+                <div class="figloc">Coimbra</div>
             </figure>
             <figure>
                 <img src="fav/3.JPG" alt="" />
-                <figcaption>Biblioteca Municipal de Anadia, Aveiro</figcaption>
+                <div class="figloc">Biblioteca Municipal de Anadia, Aveiro</div>
+            </figure>
+            <figure>
+                <img src="fav/velodromo.JPG" alt="" />
+                <div class="figloc">Velódromo Nacional, Aveiro</div>
+            </figure>
+            <figure>
+                <img src="fav/coldplaywide.jpg" alt="" />
+                <div class="figloc">Estádio Cidade de Coimbra, Coimbra</div>
+                <div class="fignote">This photo was taken days before the first Coldplay concert in Coimbra. The stage is already set.</div>
+            </figure>
+            <figure>
+                <img src="fav/parqueurbano.jpg" alt="" />
+                <div class="figloc">Parque Urbano de Anadia, Aveiro</div>
             </figure>
             <h1>360 Images</h1>
             <div class="computer-only"> ⚠️ Drag the mouse to move around the picture.</div>
@@ -62,19 +85,27 @@
                 </a-scene>
               </div>
             <figure>
-                <figcaption>Coimbra</figcaption>
+                <div class="figloc">Coimbra</div>
+                <div class="fignote">A high altitude of the sunset.</div>
+            </figure>
+            <div id="container">
+                <a-scene embedded vr-mode-ui="enabled: false">
+                  <a-sky src="fav/panocoldplay.jpg" rotation="0 -90 0"></a-sky>
+                </a-scene>
+              </div>
+            <figure>
+                <div class="figloc">Coimbra</div>
+                <div class="fignote">This photo was taken days before the first Coldplay concert in Coimbra. The stage is already set.</div>
             </figure>
             <br><br><br>
             <section class="setButtons">
-                <button value="1">View Gallery</button>
-                <button value="2">Socials</button>
-                <button value="3">Contact</button>
+                <button onclick="window.location.href = 'index.html'" value="1">Main Page</button>
+                <button class="fakebuttonhover" value="2">View Galery</button>
+                <button onclick="window.location.href = 'contact.html'" value="3">Contact</button>
             </section>
-            <section>
-                <center><p style="font-size: 120%;"><b>“The best thing about a picture is that it never changes, even when the people in it do.”</b> – Andy Warhol </p></center>
-                <hr />     
-                <p>Sed rhoncus a leo congue sollicitudin. Fusce risus tortor, rutrum id egestas at, elementum in dui. Fusce bibendum purus eu turpis vestibulum, eget aliquet ante pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce egestas, mauris eu vehicula placerat, lacus mi hendrerit lacus, ac rhoncus arcu purus eget odio. Aliquam commodo mattis lorem vitae porttitor.</p>
-            </section>
+                <hr />  
+                <h1>Info</h1>
+            <center><p>This website was developed by Guilherme Rosmaninho.</p></center> 
         </section>
     </div>
 </body>

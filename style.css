@@ -137,6 +137,14 @@ body, html {
     border: 1px solid blue;
   }
 
+  .fakebuttonhover {
+    animation: flicker2 0.1s infinite alternate;
+    color: #000;
+    border: 1px solid transparent;
+    box-shadow: 0 0 40px #0A0, inset 0 0 40px #0A0;
+    background: repeating-linear-gradient(0deg, #0c0, #0c0 1px, #050 1px, #050 2px);
+  }
+
   img {
     border: 2px solid #0f0;
     overflow: hidden;
