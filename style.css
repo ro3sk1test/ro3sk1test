@@ -89,7 +89,7 @@ body, html {
   .screen {
     font-family: 'Share Tech Mono', monospace;
     display: flex;
-    animation: flicker 0.006s infinite;
+    animation: flicker 0.001s infinite;
     mix-blend-mode: screen;
   }
   
@@ -378,7 +378,6 @@ body, html {
     
        .screen {
           display: block;
-          animation: normal;
       }
       .buttonGroup {
         width: auto;
@@ -387,4 +386,10 @@ body, html {
         margin-right: auto;
       }
   }
+
+  @media only screen and (max-width: 767px) {
+    .screen {
+      animation: normal;
+    }
+}
   
