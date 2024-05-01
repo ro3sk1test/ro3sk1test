@@ -67,9 +67,15 @@ body, html {
     text-align: center;
     display: block;
     font-weight: bold;
-    font-size: 4em;
+    font-size: 4vw;
     float:none;
     clear:both;
+  }
+
+  @media screen and (max-width: 767px) {
+    titulo {
+      font-size: 10vw;
+    }
   }
   
   h2:before, h2:after, h1:before, h1:after, h3:before, h3:after {
@@ -376,16 +382,14 @@ body, html {
     }
   }
   
-  .typewriter p {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid green; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
-  }
+  .typewriter {
+    overflow: hidden;
+    border-right: .15em solid green;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+
+}
   
   /* The typing effect */
   @keyframes typing {
@@ -413,9 +417,9 @@ body, html {
   @media screen and (max-width: 700px) {
       .buttonGroup {
         width: 100%;
-        padding: 0 10px;
-        margin-left: auto;
+        padding: 0px;
         margin-right: auto;
+        margin-left: auto;
       }
   }
 
