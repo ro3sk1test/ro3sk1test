@@ -8,8 +8,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/ro3sk1.ico">
     <script src="https://kit.fontawesome.com/96d7daf03c.js" crossorigin="anonymous"></script>
     <script src="assets.js"></script>
-    <link rel="stylesheet" href="my-slider.css"/>
-    <script src="ism-2.2.min.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
 
     <style>
         /* CSS for image spacing */
@@ -26,6 +25,12 @@
         .screen {
 
             mix-blend-mode:normal;
+        }
+        #container {
+            width: 300px;
+            height: auto;
+            margin: 0 auto; /* Center the container */
+            
         }
 
 
@@ -49,6 +54,14 @@
             <figure>
                 <img src="fav/3.JPG" alt="" />
                 <figcaption>Biblioteca Municipal de Anadia, Aveiro</figcaption>
+            </figure>
+            <figure>
+                    <a-scene embedded style="height: 520px;width: 630px;
+                    max-width: 1700px;border: 2px solid #0f0;
+                    overflow: hidden;">
+                        <a-sky src="fav/pano.jpg" rotation="0 -90 0"></a-sky>
+                    </a-scene>
+                <figcaption>Coimbra</figcaption>
             </figure>
             <br><br><br>
             <section class="setButtons">
