@@ -220,6 +220,7 @@ body, html {
   }
   
   .buttonGroup {
+    margin-top: 50px;
     width: 40%;
     padding: 0 10px;
     margin-left: auto;
@@ -227,6 +228,7 @@ body, html {
   }
   
   .buttonGroup hr {
+    margin-bottom: 20px;
     position: relative;
     height: 1em;
     color: #0f0;
