@@ -102,7 +102,21 @@
                 <div class="figloc">Coimbra</div>
                 <div class="fignote">This photo was taken days before the first Coldplay concert in Coimbra. The stage is already set.</div>
             </figure>
+
             <br><br><br>
+            <button onclick="openPopup()">Copyright</button>
+            <div class="modal-overlay" onclick="closePopup()"></div>
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p>&copy; <span id="year"></span> <strong>flywithgui</strong>. All rights reserved.</p>
+                <p>All content, including text, images, graphics, and video, on this website is the property of <strong>flywithgui</strong> unless otherwise stated. This content is protected by copyright laws and may not be reproduced, distributed, transmitted, displayed, or otherwise used without the prior written permission of <strong>flywithgui</strong>.</p>
+                <p>Unauthorized use of any content from this website may violate copyright, trademark, and other laws. <strong>flywithgui</strong> reserves the right to pursue legal action against unauthorized usage.</p>
+                <p>For inquiries regarding the use of content from this website, please contact <a href="mailto:gui.rosmaninho@icloud.com">gui.rosmaninho@icloud.com</a>.</p>
+                <p>Thank you for respecting the intellectual property rights of <strong>flywithgui</strong>.</p>
+                <button onclick="closePopup()">Close</button>
+            </div>
+            <br>
             
                 <hr />  
                 <h1>Info</h1>
@@ -110,4 +124,20 @@
         </section>
     </div>
 </body>
+
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    function openPopup() {
+            // Show the modal overlay and content
+            document.querySelector('.modal-overlay').style.display = 'flex';
+            document.querySelector('.modal-content').style.display = 'block';
+        }
+
+        function closePopup() {
+            // Hide the modal overlay and content
+            document.querySelector('.modal-overlay').style.display = 'none';
+            document.querySelector('.modal-content').style.display = 'none';
+        }
+</script>
+
 </html>
