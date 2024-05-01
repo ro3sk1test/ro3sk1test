@@ -27,10 +27,13 @@
             mix-blend-mode:normal;
         }
         #container {
-            width: 300px;
-            height: auto;
-            margin: 0 auto; /* Center the container */
-            
+            max-width: 100%; /* Allow the container to expand to the maximum width available */
+            height: 400px; /* Set a fixed height for the container */
+            border: 2px solid #0f0;
+            width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
 
@@ -55,12 +58,12 @@
                 <img src="fav/3.JPG" alt="" />
                 <figcaption>Biblioteca Municipal de Anadia, Aveiro</figcaption>
             </figure>
+            <div id="container">
+                <a-scene embedded>
+                  <a-sky src="fav/pano.jpg" rotation="0 -90 0"></a-sky>
+                </a-scene>
+              </div>
             <figure>
-                    <a-scene embedded class="buttonGroup" style="height: 520px;width: 35.2vw;
-                    max-width: 1700px;border: 2px solid #0f0;
-                    overflow: hidden;">
-                        <a-sky src="fav/pano.jpg" rotation="0 -90 0"></a-sky>
-                    </a-scene>
                 <figcaption>Coimbra</figcaption>
             </figure>
             <br><br><br>
