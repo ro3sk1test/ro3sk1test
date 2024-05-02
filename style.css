@@ -218,6 +218,21 @@ body, html {
   iframe#iframeVideo {
     mix-blend-mode: overlay;
   }
+  .figloc {
+    margin-top: 10px;
+  }
+  .figloc:before {
+      content:" 📍 ";
+  }
+  .figloc:after {
+      content: " 🇵🇹";
+  }
+  .fignote {
+      margin-top: 5px;
+  }
+  .fignote:before {
+      content: "🌐 ";
+  }
 
   .modal-overlay {
     position: fixed;
