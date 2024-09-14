@@ -65,7 +65,7 @@ body, html {
     margin: 10px;
     display: block;
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.8vw;
     float:none;
     clear:both;
   }
@@ -93,6 +93,10 @@ body, html {
   
   h2:before, h2:after, h3:before, h3:after {
     content:" ✱ ✱ ";
+  }
+
+  h1:before, h1:after {
+    content:" ✱ ";
   }
   
   
