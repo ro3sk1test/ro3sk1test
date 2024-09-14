@@ -1,14 +1,14 @@
 body, html {
-    font-family: 'Share Tech Mono', monospace;
-    background-color: #121;
-    box-shadow: inset 0 0 500px rgba(255, 208, 0, 0.054);
-    
-    background: linear-gradient(to bottom, #000000 0%, #060606 100%);
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-  }
+  font-family: 'Share Tech Mono', monospace;
+  background-color: #121;
+  box-shadow: inset 0 0 500px rgba(255, 208, 0, 0.054);
+
+  background: linear-gradient(to bottom, #000000 0%, #060606 100%);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
   
   ::selection {
     background-color:rgb(255, 255, 255);
@@ -113,7 +113,7 @@ body, html {
   .screen {
     font-family: 'Share Tech Mono', monospace;
     display: flex;
-    animation: flicker 0s infinite;
+    animation: flicker 0.001s infinite;
     mix-blend-mode: screen;
   }
   
@@ -494,24 +494,5 @@ body, html {
     .screen {
       animation: normal;
     }
-}
-
-.top {
-  --offset: 50px; 
-  
-  position: sticky;
-  bottom: 20px;      
-  margin-right:10px; 
-  place-self: end;
-  margin-top: calc(100vh + var(--offset));
-  
-  /* visual styling */
-  text-decoration: none;
-  padding: 10px;
-  font-family: sans-serif;
-  color: #fff;
-  background: #000;
-  border-radius: 100px;
-  white-space: nowrap;
 }
   
