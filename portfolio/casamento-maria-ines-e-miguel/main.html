@@ -15,6 +15,33 @@
 
     </head>
 
+    <style>
+        .screen {
+            font-family: 'Share Tech Mono', monospace;
+            display: flex;
+            animation: flicker 0s infinite;
+            mix-blend-mode: screen;
+        }
+        img {
+            pointer-events:all;
+            border: 2px solid rgb(255, 255, 255);
+        }
+        .grid-two-content {
+            width: 100%;
+            height: 70%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+        .grid-three-content {
+            width: 100%;
+            height: 70%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+    </style>
+
     <div class="screen">
         <section class="buttonGroup">
         <div class="typewriter">
